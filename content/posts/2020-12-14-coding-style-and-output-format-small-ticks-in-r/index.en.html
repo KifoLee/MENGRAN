@@ -1,0 +1,105 @@
+---
+title: Coding style and output format—small tricks in R
+author: MengranLi
+date: '2020-12-14'
+slug: []
+categories:
+  - R
+tags: []
+authors: [MengranLi]
+description: ''
+featuredImage: ''
+lastmod: '2020-12-14T19:42:22+08:00'
+series: []
+tas: yes
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>Some one write their code causually which leads to the difficulties to read. And it may be inevitable to be lazy in programming and not paying attention to code specifications. That will cause some inconvenience to no matter others read our code or ourselves check our own work.</p>
+<p>There are some coding style guide such as Google’s <a href="https://google.github.io/styleguide/Rguide.html">R style guide</a> or <a href="http://adv-r.had.co.nz/Style.html">Style guide</a> in <span class="math inline">\(Advanced\)</span> <span class="math inline">\(R\)</span> by Hadley Wickham.
+In simple terms, R style guide includes Naming and Syntax. You can read the two documents by the links here. But what I focus on is how to obey the rules when I’m annoyed by programming progamming. These two packages may help.</p>
+<div id="styler" class="section level2">
+<h2>styler</h2>
+<p>This package follows the tidyverse rules and can be installed by:</p>
+<pre class="r"><code>install.packages(&quot;styler&quot;)</code></pre>
+<p>Or install the development version:</p>
+<pre class="r"><code>install.packages(&quot;remotes&quot;)
+remotes::install_github(&quot;r-lib/styler&quot;)</code></pre>
+<p>Please notice, when the first time to use, it’s better to authorize the R.cache to set your file. After, you can use it through be button of <span class="math inline">\(Addins\)</span> in the top sidebar. Just click on Style active file, then the file will be formatted into tidyverse style.</p>
+</div>
+<div id="formatr" class="section level2">
+<h2>formatR</h2>
+<p>The other useful package is <span class="math inline">\(formatR\)</span> by Yihui. It has an offical document <a href="https://yihui.org/formatr/">formatR
+Format R code automatically</a>. You can get detailed information throught the link. Here we just simply introduce the function to format R code.</p>
+<pre class="r"><code>library(formatR)
+tidy_source(&quot;X.R&quot;)</code></pre>
+<p>Input the R file you want to format, and run the tidy_source function.</p>
+<p>There also are some function such as tidy_shiny for shiny, tidy_dir for all files under working directory. But the another function I want to perform is tidy_eval, which can be used to organize the output.</p>
+<p>Here is the example to explain the use.
+If you don’t use the function:</p>
+<pre class="r"><code>set.seed(123)
+text = c(&quot;a&lt;-1+1;a  # print the value&quot;, &quot;matrix(rnorm(10),5)&quot;)
+text</code></pre>
+<pre><code>## [1] &quot;a&lt;-1+1;a  # print the value&quot; &quot;matrix(rnorm(10),5)&quot;</code></pre>
+<p>It just plays the text.</p>
+<pre class="r"><code>library(formatR)
+set.seed(123)
+tidy_eval(text = c(&quot;a&lt;-1+1;a  # print the value&quot;, &quot;matrix(rnorm(10),5)&quot;))</code></pre>
+<pre><code>## a &lt;- 1 + 1
+## a  # print the value
+## ## [1] 2
+## 
+## matrix(rnorm(10), 5)
+## ##             [,1]       [,2]
+## ## [1,] -0.56047565  1.7150650
+## ## [2,] -0.23017749  0.4609162
+## ## [3,]  1.55870831 -1.2650612
+## ## [4,]  0.07050839 -0.6868529
+## ## [5,]  0.12928774 -0.4456620</code></pre>
+<p>While using the funtion, you can get an output, whose result combine the two code paragragh.</p>
+</div>
+<div id="broom" class="section level2">
+<h2>broom</h2>
+<p>The other package for output is broom. As we all known, the summary result of regression, anova and some other models are not neat. It means that we can not obtain a table that can be write down as a csv file or some else useful format. The <span class="math inline">\(broom\)</span> package can solve the problem. And there are two main functions.</p>
+<pre class="r"><code>fit &lt;- lm(mpg~wt,mtcars)
+summary(fit)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ wt, data = mtcars)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -4.5432 -2.3647 -0.1252  1.4096  6.8727 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***
+## wt           -5.3445     0.5591  -9.559 1.29e-10 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 3.046 on 30 degrees of freedom
+## Multiple R-squared:  0.7528, Adjusted R-squared:  0.7446 
+## F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
+<p>Then you can obtain the clean format:</p>
+<pre class="r"><code>library(broom)
+tidy(fit)</code></pre>
+<pre><code>## # A tibble: 2 x 5
+##   term        estimate std.error statistic  p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept)    37.3      1.88      19.9  8.24e-19
+## 2 wt             -5.34     0.559     -9.56 1.29e-10</code></pre>
+<p>Much better, isn’t it?</p>
+<p>As the name, glance is usually applied to check the overall situation of models.</p>
+<pre class="r"><code>glance(fit)</code></pre>
+<pre><code>## # A tibble: 1 x 12
+##   r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC
+##       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1     0.753         0.745  3.05      91.4 1.29e-10     1  -80.0  166.  170.
+## # ... with 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;</code></pre>
+<p>In addition, there are alse some else packages to make it easy to organize the output format such as xtable and so on. But it is mainly for the Latex, which is not today’s point. I will introduce the format in Markdown and Latex Specially.</p>
+</div>
