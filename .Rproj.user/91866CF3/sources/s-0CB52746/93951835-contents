@@ -51,9 +51,8 @@ Sign in [Github](https://github.com/) and download the [Github desktop](https://
 ## Build Web
 
 Creat a new project in your R Studio:
-![](/2020-12-14-how-to-set-a-personal-site-in-r-blogdown/Web_project.png)
+![](https://raw.githubusercontent.com/KifoLee/Mengran/main/content/posts/2020-12-14-how-to-set-a-personal-site-in-r-blogdown/Web-project.png)
 
-File < New Project < New Directory < 
+File < New Project < New Directory < Website using blogdown.
 
 
-[doge]:data:image/png;base64,iVBORw0......
