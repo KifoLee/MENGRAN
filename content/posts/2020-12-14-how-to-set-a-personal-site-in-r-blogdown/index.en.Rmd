@@ -55,4 +55,6 @@ Creat a new project in your R Studio:
 
 File < New Project < New Directory < Website using blogdown.
 
+![](https://raw.githubusercontent.com/KifoLee/Mengran/main/content/posts/2020-12-14-how-to-set-a-personal-site-in-r-blogdown/Project-set.png)
 
+You can name you project and set a hugo theme. The default theme is Yihui's lithium, which is simple and clean. You can select one theme that you like in [Hugo Themes](https://themes.gohugo.io/)
