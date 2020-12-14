@@ -1,4 +1,4 @@
 ---
 layout: doc_list
-title: Docs
+title: Reading Notes
 ---
