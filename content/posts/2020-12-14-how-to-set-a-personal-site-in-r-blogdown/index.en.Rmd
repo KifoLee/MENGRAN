@@ -60,8 +60,15 @@ File < New Project < New Directory < Website using blogdown.
 You can name you project and set a hugo theme. The default theme is Yihui's lithium, which is simple and clean. You can select one theme that you like in [Hugo Themes](https://themes.gohugo.io/). And click on the $download$ button:
 ![](https://raw.githubusercontent.com/KifoLee/Mengran/main/content/posts/2020-12-14-how-to-set-a-personal-site-in-r-blogdown/Hugo-theme.png)
 
-Then you will see its github home.
+Then you will see its github home. Get the address after $http://github.com/$ in your browser's address bar:
 
+![](https://raw.githubusercontent.com/KifoLee/Mengran/main/content/posts/2020-12-14-how-to-set-a-personal-site-in-r-blogdown/Address.png)
+ And fill it into the above $Hugo$ $theme$ blank space of New Project Wizard.
+ 
+ Click on the $Create$ $Project$ button. Just wait. Then you will success.
+ 
+## Publish to Net
 
+Do you want your website published?
 
 
