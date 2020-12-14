@@ -1,6 +1,6 @@
 [[main]]
   name = "About"
-  url = "/about/"
+  url = "/authors/mengranli/"
   weight = 1
 
 [[main]]

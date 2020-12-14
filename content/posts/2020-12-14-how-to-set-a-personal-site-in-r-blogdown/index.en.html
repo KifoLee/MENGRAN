@@ -12,16 +12,12 @@ description: ''
 featuredImage: ''
 lastmod: '2020-12-14T09:17:33+08:00'
 series: []
-toc: yes
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 <link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
 <script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
-<div id="TOC">
-yes
-</div>
 
 <p>This website is established by R Blogdown. So the first article here is to introduce how to build it by R Blogdown.</p>
 <div id="r-and-r-studio" class="section level2">
@@ -30,7 +26,23 @@ yes
 But I think R Studio can reduce your confusing greatly, especially for those who are not proficient in programming.</p>
 <p>You can download <a href="https://cran.r-project.org/bin/windows/base/">R</a> and <a href="https://www.baidu.com/link?url=wvLDPhdBNMS_sRtEAVnbAh1fvhypiu4zgSc_xjpTC00u4CJLxtlUElh7GhKDoYpScTUcMbnRwJ5MyOY_UauPEq&amp;wd=&amp;eqid=dedd20a80013a2a6000000025fd6bfed">R Studio</a> here.</p>
 </div>
-<div id="blogdown" class="section level2">
-<h2>Blogdown</h2>
-<p>The sec</p>
+<div id="blogdown-and-hugo" class="section level2">
+<h2>Blogdown and HUGO</h2>
+<p>The second step is installing the <span class="math inline">\(blogdown\)</span> package. You can use the following command in R:</p>
+<pre class="r"><code>install.packages(&quot;blogdown&quot;)</code></pre>
+<p>And install HUGO:</p>
+<pre class="r"><code>blogdown::install_hugo()</code></pre>
+<p>If error appears, you can use <span class="math inline">\(devtools\)</span>:</p>
+<pre class="r"><code>install.packages(&quot;devtools&quot;)
+devtools::install_github(&quot;rstudio/blogdown&quot;)</code></pre>
+</div>
+<div id="github" class="section level2">
+<h2>Github</h2>
+<p>Sign in <a href="https://github.com/">Github</a> and download the <a href="https://desktop.github.com/">Github desktop</a>.</p>
+</div>
+<div id="build-web" class="section level2">
+<h2>Build Web</h2>
+<p>Creat a new project in your R Studio:
+<img src="/2020-12-14-how-to-set-a-personal-site-in-r-blogdown/index.en_files/Web_project.png" /></p>
+<p>File &lt; New Project &lt; New Directory &lt;</p>
 </div>
