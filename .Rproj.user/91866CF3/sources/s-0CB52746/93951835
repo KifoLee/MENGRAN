@@ -3,22 +3,22 @@
     "path": "F:/Mengran/content/posts/2020-12-14-how-to-set-a-personal-site-in-r-blogdown/index.en.Rmd",
     "project_path": "content/posts/2020-12-14-how-to-set-a-personal-site-in-r-blogdown/index.en.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "4061581816",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1607922180465.0,
     "source_on_save": false,
     "relative_order": 3,
     "properties": {
-        "cursorPosition": "77,132",
-        "scrollLine": "75"
+        "cursorPosition": "85,0",
+        "scrollLine": "76"
     },
     "folds": "",
-    "lastKnownWriteTime": 1607935498,
+    "lastKnownWriteTime": 1607936424,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1607935915828,
+    "last_content_update": 1607936424394,
     "read_only": false,
     "read_only_alternatives": []
 }

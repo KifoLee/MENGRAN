@@ -78,3 +78,9 @@ Click the third button.
 ![](https://raw.githubusercontent.com/KifoLee/Mengran/main/content/posts/2020-12-14-how-to-set-a-personal-site-in-r-blogdown/Pushing.png)
 After pushing it, you can set your web!
 
+The last setp is to connecting your github repositories with your [netlify](https://app.netlify.com/signup)
+
+Sites < New site from Git < Github < Deploy site.
+
+You get your personal web!
+
