@@ -6,11 +6,11 @@ slug: []
 categories:
   - Statistics
 tags: []
-authors: []
+authors: [MengranLi]
 description: ''
 featuredImage: ''
 lastmod: '2020-12-21T17:37:28+08:00'
-series: []
+series: [Matrix Derivation]
 ---
 
 
