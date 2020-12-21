@@ -1,0 +1,65 @@
+---
+title: Matrix Derivation
+author: MengranLi
+date: '2020-12-21'
+slug: []
+categories:
+  - Statistics
+tags: []
+authors: []
+description: ''
+featuredImage: ''
+lastmod: '2020-12-21T17:37:28+08:00'
+series: []
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>In statistical study and research, matrix derivation is used frequently. Some complex formulas can be derived by Matrix Derivation simply. Unfortunately, it seems that students in Statistics will not be taught about matrix derivation. So the issues usually become hard to solve. For example, OLS is easy with only one independent variable, while it would be much more complex when the number of independent variables is over one. You have to write down so many functions of each variable. But for matrix derivation, not only the computation is simple but also the thought is in accordance with the one variable’s method. Matrix is a useful tools in statistical. I have learned several materials about it and sort the knowledge.</p>
+<div id="defination" class="section level2">
+<h2>Defination</h2>
+<p>Derivative of scalar <span class="math inline">\(f\)</span> to matrix <span class="math inline">\(X\)</span> as
+<span class="math display">\[\frac{\partial{f}}{\partial{X}}=\frac{\partial{f}}{\partial{X_{ij}}}\]</span></p>
+<p>For scalar <span class="math inline">\(x\)</span>, <span class="math display">\[df=f&#39;(x)dx\]</span></p>
+<p>For vector <span class="math inline">\(x\)</span>, total differential formula is
+<span class="math display">\[df=\sum_{i=1}^n{\frac{\partial{f}}{\partial{x_i}}dx_i}=\frac{\partial{f^T}}{\partial{x}}dx\]</span></p>
+<p>For matrix <span class="math inline">\(X\)</span>, here is
+<span class="math display">\[df=\sum_{i=1}^m{\sum_{j=1}^n{\frac{\partial{f}}{\partial{X_{ij}}}dX_{ij}}}=tr(\frac{\partial{f^T}}{\partial{X}}dX)\]</span></p>
+</div>
+<div id="basic-formula" class="section level2">
+<h2>Basic formula</h2>
+<ol style="list-style-type: decimal">
+<li><ul>
+<li><span class="math inline">\(d(X\pm{Y})=dX\pm{dY}\)</span></li>
+<li><span class="math inline">\(d(XY)=(dX)Y+XdY\)</span></li>
+<li><span class="math inline">\(d(X^T)=(dX)^T\)</span></li>
+<li><span class="math inline">\(dtr(X)=tr(dX)\)</span></li>
+</ul></li>
+<li><ul>
+<li><span class="math inline">\(dX^{-1}=-XdXX^{-1}\)</span></li>
+</ul></li>
+<li><ul>
+<li><span class="math inline">\(d|X|=tr(X^{*}dX)\)</span>, where <span class="math inline">\(X^*\)</span> represents Adjoint matrix</li>
+<li><span class="math inline">\(d|X|=|X|tr(X^{-1}dX)\)</span>, when <span class="math inline">\(X\)</span> is reversible.</li>
+</ul></li>
+<li><ul>
+<li><span class="math inline">\(d(X\odot{Y})=dX\odot{Y}+X\odot{dY}\)</span></li>
+</ul></li>
+<li><ul>
+<li><span class="math inline">\(d\sigma(X)=\sigma&#39;(X)\odot{dX}\)</span>, where<span class="math inline">\(\sigma(X)=[\sigma(X_{ij})]\)</span></li>
+</ul></li>
+</ol>
+</div>
+<div id="tips" class="section level2">
+<h2>Tips</h2>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(f=tr(f)\)</span>, if it’s a scalar.</li>
+<li><span class="math inline">\(tr(A^T)=tr(A)\)</span></li>
+<li><span class="math inline">\(tr(A\pm{B}=tr(A)\pm{tr(B)})\)</span></li>
+<li><span class="math inline">\(tr(AB)=tr(BA)\)</span></li>
+<li><span class="math inline">\(tr(A^T(B\odot{C}))=tr((A\odot{B})^TC)\)</span></li>
+</ol>
+</div>
