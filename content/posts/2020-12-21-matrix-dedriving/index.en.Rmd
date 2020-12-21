@@ -20,7 +20,7 @@ In statistical study and research, matrix derivation is used frequently. Some co
 ## Defination
 
 Derivative of scalar $f$ to matrix $X$ as
-$$\frac{\partial{f}}{\partial{X}}=\frac{\partial{f}}{\partial{X_{ij}}}$$
+$$\frac{\partial{f}}{\partial{X}}=[\frac{\partial{f}}{\partial{X_{ij}}}]$$
 
 For scalar $x$, $$df=f'(x)dx$$
 
