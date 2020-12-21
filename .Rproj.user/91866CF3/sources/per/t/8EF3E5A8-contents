@@ -14,7 +14,7 @@ series: [Matrix Derivation]
 ---
 
 
-In statistical study and research, matrix derivation is used frequently. Some complex formulas can be derived by Matrix Derivation simply. Unfortunately, it seems that students in Statistics will not be taught about matrix derivation. So the issues usually become hard to solve. For example, OLS is easy with only one independent variable, while it would be much more complex when the number of independent variables is over one. You have to write down so many functions of each variable. But for matrix derivation, not only the computation is simple but also the thought is in accordance with the one variable's method. Matrix is a useful tools in statistical. I have learned several materials about it and sort the knowledge.
+In statistical study and research, matrix derivation is used frequently. Some complex formulas can be derived by Matrix Derivation simply. Unfortunately, it seems that students in Statistics will not be taught about matrix derivation. So the issues usually become hard to solve. For example, OLS is easy with only one independent variable, while it would be much more complex when the number of independent variables is over one. You have to write down so many functions of each variable. But for matrix derivation, not only the computation is simple but also the thought is in accordance with the one variable's method. Matrix is a useful tool in statistical. I have learned several materials about it and restructure the knowledge system by my understanding.
 
 
 ## Defination
