@@ -1,0 +1,68 @@
+---
+title: Matrix Derivation (2)
+author: MengranLi
+date: '2020-12-29'
+slug: []
+categories:
+  - Statistics
+tags: []
+authors: [MengranLi]
+description: ''
+featuredImage: ''
+lastmod: '2020-12-29T20:56:59+08:00'
+series: [Matrix Derivation]
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>Last time, we introduced the topic of Matrix Derivation. But we only discussed the situation when <span class="math inline">\(f\)</span> is a scalar. How about matrix <span class="math inline">\(f\)</span>? The vectorization method is used in the derivation of matrix. Let’s start.</p>
+<div id="defination" class="section level2">
+<h2>Defination</h2>
+<p>How can we define the matrix to matrix derivative? We need to review the previous definition when <span class="math inline">\(f\)</span> is only a scalar.</p>
+<div id="vector-f-and-vector-x" class="section level3">
+<h3>Vector <span class="math inline">\(f\)</span> and Vector <span class="math inline">\(x\)</span></h3>
+<p>For vector <span class="math inline">\(x\)</span>, total differential formula is
+<span class="math display">\[df=\sum_{i=1}^n{\frac{\partial{f}}{\partial{x_i}}dx_i}=\frac{\partial{f^T}}{\partial{x}}dx\]</span></p>
+<p>Thus, we can define the derivative between <strong>vector <span class="math inline">\(f(p\times1)\)</span> and vector <span class="math inline">\(x\)</span></strong>:
+<span class="math display">\[\frac{\partial{f}}{\partial{x}}=
+\begin{bmatrix} 
+\frac{\partial{f_1}}{\partial{x_1}}&amp;\frac{\partial{f_2}}{\partial{x_1}}&amp;\cdots&amp;\frac{\partial{f_p}}{\partial{x_1}}\\
+\frac{\partial{f_1}}{\partial{x_2}}&amp;\frac{\partial{f_2}}{\partial{x_2}}&amp;\cdots&amp;\frac{\partial{f_p}}{\partial{x_2}}\\
+\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+\frac{\partial{f_1}}{\partial{x_m}}&amp;\frac{\partial{f_2}}{\partial{x_m}}&amp;\cdots&amp;\frac{\partial{f_p}}{\partial{x_m}}\\
+\end{bmatrix}(m\times{p})\]</span></p>
+</div>
+<div id="vectorization-of-a-matrix" class="section level3">
+<h3>Vectorization of a matrix</h3>
+<p>We define the vectorization of a matrix (column first):</p>
+<p><span class="math display">\[vec(X)=[X_{11},\cdots,X_{m1},X_{12},\cdots,X_{m2},\cdots,X_{1n},\cdots,X_{mn}]^T(mn\times1)\]</span></p>
+</div>
+<div id="matrix-f-and-matrix-x" class="section level3">
+<h3>Matrix <span class="math inline">\(f\)</span> and Matrix <span class="math inline">\(x\)</span></h3>
+<p><span class="math display">\[\frac{\partial{F_{p\times{q}}}}{\partial{X_{m\times{n}}}}=\frac{\partial{vec(F_{pq})}}{\partial{vec(X_{mn})}}(mn\times{pq})\]</span>
+<span class="math display">\[vec(dF)=\frac{\partial{F^T}}{\partial{X}}vec(dX)\]</span></p>
+</div>
+</div>
+<div id="connection" class="section level2">
+<h2>Connection</h2>
+<div id="hessian-matrix" class="section level3">
+<h3>Hessian matrix</h3>
+<p>To distinguish the two definitions of derivative of scalar <span class="math inline">\(f\)</span> to matrix <span class="math inline">\(X\)</span>, we define the <span class="math inline">\(\frac{\partial{f}}{\partial{X}}=[\frac{\partial{f}}{\partial{X_{ij}}}]\)</span> as <span class="math inline">\(\nabla_{X}f\)</span>.</p>
+<p>The second derivative of scalar to matrix is also called Hessian matrix.</p>
+<p><span class="math display">\[\nabla_{X}^2f=\frac{\partial^2{f}}{\partial{X}^2}=\frac{\partial{\nabla_Xf}}{\partial{X}}(mn\times{mn})\]</span></p>
+</div>
+<div id="jacobian-matrix" class="section level3">
+<h3>Jacobian matrix</h3>
+<p><span class="math display">\[\frac{\partial{f}}{\partial{x}}=
+\begin{bmatrix} 
+\frac{\partial{f_1}}{\partial{x_1}}&amp;\frac{\partial{f_1}}{\partial{x_2}}&amp;\cdots&amp;\frac{\partial{f_1}}{\partial{x_m}}\\
+\frac{\partial{f_2}}{\partial{x_1}}&amp;\frac{\partial{f_2}}{\partial{x_2}}&amp;\cdots&amp;\frac{\partial{f_2}}{\partial{x_m}}\\
+\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+\frac{\partial{f_p}}{\partial{x_1}}&amp;\frac{\partial{f_p}}{\partial{x_2}}&amp;\cdots&amp;\frac{\partial{f_p}}{\partial{x_m}}\\
+\end{bmatrix}(p\times{m})\]</span></p>
+<p>The derivatives of two layouts are transposed to each other.</p>
+</div>
+</div>

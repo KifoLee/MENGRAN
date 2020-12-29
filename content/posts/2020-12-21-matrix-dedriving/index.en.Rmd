@@ -52,7 +52,7 @@ $$df=\sum_{i=1}^m{\sum_{j=1}^n{\frac{\partial{f}}{\partial{X_{ij}}}dX_{ij}}}=tr(
 ## Tips
 1. $f=tr(f)$, if it's a scalar.
 2. $tr(A^T)=tr(A)$
-3. $tr(A\pm{B}=tr(A)\pm{tr(B)})$
+3. $tr(A\pm{B})=tr(A)\pm{tr(B)}$
 4. $tr(AB)=tr(BA)$
 5. $tr(A^T(B\odot{C}))=tr((A\odot{B})^TC)$
 
