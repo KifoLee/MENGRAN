@@ -25,7 +25,3 @@ where $X_1,\dots,X_n$, is a sequence of independent random variables having a co
 Since $F$ is unknown, so we can look for approximate families of models for $F^n$.
 
 
-$$\begin{align}
-  x^2  + y^2 & = 1                      \\
- x         & = \sqrt{1-y^2}
-\end{align}$$
