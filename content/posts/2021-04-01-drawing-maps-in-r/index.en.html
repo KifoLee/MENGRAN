@@ -14,6 +14,9 @@ series: []
 ---
 
 <script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/htmlwidgets/htmlwidgets.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/pymjs/pym.v1.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/widgetframe-binding/widgetframe.js"></script>
 
 
 <p>There are many packages to draw maps in R. Personally, I prefer to use <em>leaflet</em> and <em>ggplot2</em>. leaflet is a web application so that we can explore data interactively, and ggplot2 can merge data conveniently.</p>
@@ -116,6 +119,51 @@ It is super suitable for a quick look at data map.</p>
 <div id="leaflet" class="section level2">
 <h2>Leaflet</h2>
 <p>Leaflet is a very popular tool based on java. It provides R package so that we can also use it.</p>
-<iframe src="F:/Mengran/content/posts/2021-04-01-drawing-maps-in-r/map.html">
-</iframe>
+<pre class="r"><code>library(leaflet)
+library(widgetframe)</code></pre>
+<pre><code>## Loading required package: htmlwidgets</code></pre>
+<pre class="r"><code>## Loading required package: htmlwidgets
+
+load(&quot;F:/Mengran/content/posts/2021-04-01-drawing-maps-in-r/bound.Rdata&quot;)
+GetURL &lt;- function(service, host = &quot;basemap.nationalmap.gov&quot;) {
+  sprintf(&quot;https://%s/arcgis/services/%s/MapServer/WmsServer&quot;, host, service)
+}
+pal &lt;- colorNumeric(
+  palette = colorRampPalette(c(&quot;skyblue&quot;, &quot;darkblue&quot;))(length(bound$mean)),
+  domain = bound$mean
+)
+map &lt;- leaflet(bound) %&gt;%
+  setView(lng = -95, lat = 40, zoom = 4)%&gt;%
+  addPolygons(color = ~ pal(mean), weight = 1, smoothFactor = 0.5,
+              opacity = 1.0, fillOpacity = 0.5,label = ~htmltools::htmlEscape(paste(huc2, name)),
+              highlightOptions = highlightOptions(color = &quot;white&quot;, weight = 2,
+                                                  bringToFront = TRUE),
+              group = &quot;Region&quot;)%&gt;%
+  addCircleMarkers(data = Siteinfo,
+                   lng = ~dec_lon_va,
+                   lat = ~dec_lat_va,
+                   radius = ~3,
+                   stroke = FALSE,
+                   fill = TRUE,
+                   color = &quot;red&quot;,
+                   fillOpacity = 0.4,
+                   group = &quot;Site&quot;
+  )%&gt;%
+  addLegend(&quot;bottomright&quot;,
+            pal = pal,
+            values = ~mean,
+            title = &quot;Mean&quot;,
+            labFormat = labelFormat(),
+            opacity = 1,
+            group=&quot;Region&quot;
+  ) %&gt;%
+  addWMSTiles(GetURL(&quot;USGSHydroCached&quot;),layers = &quot;0&quot;, group = &quot;River&quot;)%&gt;%
+  addProviderTiles(&quot;Esri.WorldImagery&quot;,group = &quot;Topography&quot;)%&gt;%
+  addLayersControl(
+    overlayGroups =c(&quot;River&quot;, &quot;Topography&quot;, &quot;Region&quot;,&quot;Site&quot;),
+    options = layersControlOptions(collapsed=FALSE)
+  )
+frameWidget(map)</code></pre>
+<div id="htmlwidget-1" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"url":"index.en_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
