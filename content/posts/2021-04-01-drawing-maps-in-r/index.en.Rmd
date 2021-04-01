@@ -69,7 +69,5 @@ It is super suitable for a quick look at data map.
 
 Leaflet is a very popular tool based on java. It provides R package so that we can also use it.
 
-```{r}
-htmltools::includeHTML("F:/Mengran/content/posts/2021-04-01-drawing-maps-in-r/map.html")
-```
+<iframe src ="F:/Mengran/content/posts/2021-04-01-drawing-maps-in-r/map.html"> </iframe> 
 

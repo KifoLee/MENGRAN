@@ -57,7 +57,7 @@ htmlwidgets::saveWidget(map,"map.html")
 
 highcharter::export_hc(object = hc$x$options,hc, "filename.js")
 
-is.list(map)
+htmlwidgets::saveWidget(map, file = "figure.html", selfcontained = TRUE)
 
 map$x$options
 
