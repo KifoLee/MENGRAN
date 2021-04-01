@@ -1,0 +1,4 @@
+"0","us.cities <- subset(us.cities, pop > 500000)"
+"0","ggplot(us.cities, aes(x = long, y = lat)) +"
+"0","  geom_point(aes(color = pop))+"
+"0","  borders(""state"")"

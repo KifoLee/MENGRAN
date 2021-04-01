@@ -1,0 +1,2 @@
+"0","data(us.cities)"
+"0","knitr::kable(head(us.cities))"
