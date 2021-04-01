@@ -69,27 +69,9 @@ It is super suitable for a quick look at data map.
 
 Leaflet is a very popular tool based on java. It provides R package so that we can also use it.
 
-```{r, echo = FALSE}
-library(data.table)
-library(tidyverse)
-setwd("F:\\StreamFlow")
-load("Stream.Rdata")
-```
-
-```{r, echo = FALSE}
-Stream <- Stream[Q >= 0]
-Stream_plot <- Stream[, c("Site", "Q", "DecYear", "Month", "Region")]
-setkey(Stream_plot, Region)
-Stream_mean <- Stream_plot[, mean(Q), by = Region]
-names(Stream_mean) <- c("huc2", "mean")
-rm(Stream, Stream_plot)
-```
-
-
-```{r, echo = FALSE, message = FALSE, results = FALSE}
-bound <- sf::st_read(dsn = "F:/StreamFlow/wbdhu2_a_us_september2020.gdb")
-bound <- subset(bound, !huc2 %in% c("19","20","21","22"))
-bound <- full_join(bound, Stream_mean, by = c("huc2" = "huc2"))
+```{r, echo = FALSE, message=FALSE}
+setwd("F:/Mengran/content/posts/2021-04-01-drawing-maps-in-r")
+load("bound.Rdata")
 ```
 
 ```{r, echo = FALSE}
