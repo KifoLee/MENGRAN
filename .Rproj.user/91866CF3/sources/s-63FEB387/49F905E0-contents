@@ -69,5 +69,51 @@ It is super suitable for a quick look at data map.
 
 Leaflet is a very popular tool based on java. It provides R package so that we can also use it.
 
-<iframe src ="F:/Mengran/content/posts/2021-04-01-drawing-maps-in-r/map.html"> </iframe> 
+```{r}
+library(leaflet)
+library(widgetframe)
+## Loading required package: htmlwidgets
+
+load("F:/Mengran/content/posts/2021-04-01-drawing-maps-in-r/bound.Rdata")
+GetURL <- function(service, host = "basemap.nationalmap.gov") {
+  sprintf("https://%s/arcgis/services/%s/MapServer/WmsServer", host, service)
+}
+pal <- colorNumeric(
+  palette = colorRampPalette(c("skyblue", "darkblue"))(length(bound$mean)),
+  domain = bound$mean
+)
+map <- leaflet(bound) %>%
+  setView(lng = -95, lat = 40, zoom = 4)%>%
+  addPolygons(color = ~ pal(mean), weight = 1, smoothFactor = 0.5,
+              opacity = 1.0, fillOpacity = 0.5,label = ~htmltools::htmlEscape(paste(huc2, name)),
+              highlightOptions = highlightOptions(color = "white", weight = 2,
+                                                  bringToFront = TRUE),
+              group = "Region")%>%
+  addCircleMarkers(data = Siteinfo,
+                   lng = ~dec_lon_va,
+                   lat = ~dec_lat_va,
+                   radius = ~3,
+                   stroke = FALSE,
+                   fill = TRUE,
+                   color = "red",
+                   fillOpacity = 0.4,
+                   group = "Site"
+  )%>%
+  addLegend("bottomright",
+            pal = pal,
+            values = ~mean,
+            title = "Mean",
+            labFormat = labelFormat(),
+            opacity = 1,
+            group="Region"
+  ) %>%
+  addWMSTiles(GetURL("USGSHydroCached"),layers = "0", group = "River")%>%
+  addProviderTiles("Esri.WorldImagery",group = "Topography")%>%
+  addLayersControl(
+    overlayGroups =c("River", "Topography", "Region","Site"),
+    options = layersControlOptions(collapsed=FALSE)
+  )
+frameWidget(map)
+```
+
 
