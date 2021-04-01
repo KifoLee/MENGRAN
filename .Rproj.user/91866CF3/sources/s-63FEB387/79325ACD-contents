@@ -13,11 +13,6 @@ bound <- sf::st_read(dsn = "F:/StreamFlow/wbdhu2_a_us_september2020.gdb")
 bound <- subset(bound, !huc2 %in% c("19","20","21","22"))
 bound <- full_join(bound, Stream_mean, by = c("huc2" = "huc2"))
 
-setwd("F:/Mengran/content/posts/2021-04-01-drawing-maps-in-r")
-save(bound,Siteinfo,file="bound.Rdata")
-
-load("bound.Rdata")
-
 library(leaflet)
 GetURL <- function(service, host = "basemap.nationalmap.gov") {
   sprintf("https://%s/arcgis/services/%s/MapServer/WmsServer", host, service)
@@ -26,7 +21,7 @@ pal <- colorNumeric(
   palette = colorRampPalette(c("skyblue", "darkblue"))(length(bound$mean)),
   domain = bound$mean
 )
-leaflet(bound) %>%
+hc <- leaflet(bound) %>%
   setView(lng = -95, lat = 40, zoom = 4)%>%
   addPolygons(color = ~ pal(mean), weight = 1, smoothFactor = 0.5,
               opacity = 1.0, fillOpacity = 0.5,label = ~htmltools::htmlEscape(paste(huc2, name)),
@@ -57,3 +52,12 @@ leaflet(bound) %>%
     overlayGroups =c("River", "Topography", "Region","Site"),
     options = layersControlOptions(collapsed=FALSE)
   )
+htmlwidgets::saveWidget(map,"map.html")
+
+
+highcharter::export_hc(object = hc$x$options,hc, "filename.js")
+
+is.list(map)
+
+map$x$options
+
