@@ -1,4 +1,4 @@
 +++
-title = "Reading List"
+title = "Notes"
 layout = "doc_list"
 +++

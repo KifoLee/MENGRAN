@@ -8,7 +8,7 @@ categories:
 tags: []
 authors: [Mengran-Li]
 description: ''
-summary: 'Basic Matrix Derivation'
+summary: "In statistical study and research, matrix derivation is used frequently. Some complex formulas can be derived by Matrix Derivation simply. Unfortunately, it seems that students in Statistics will not be taught about matrix derivation."
 featuredImage: ''
 lastmod: '2020-12-21T17:37:28+08:00'
 series: [Matrix Derivation]

@@ -1,6 +1,7 @@
 ---
+title: "Mengran Li"
 avatar: images/avatar.jpg
-bio: A student of statistics and a fan of R. I will share some knowledge and technology here. But I will often leave articles unfinished (and won't complete, perhaps)
+bio: A student of statistics and a fan of R. 
 organization:
   name: School of Mathmatics and Statistics, University of Glasgow
   url: https://www.gla.ac.uk/schools/mathematicsstatistics/
@@ -15,7 +16,13 @@ social:
 - icon: github
   icon_pack: fab
   url: https://github.com/MengranLi-git
-title: MengranLi
+
 ---
+
+I will share some knowledge and technology here. But I will often leave articles unfinished (and won't complete, perhaps). Also, I will regard it as a notebook. 
+
+My CV is available in [PDF](Resume.pdf) form.
+
+
 
 

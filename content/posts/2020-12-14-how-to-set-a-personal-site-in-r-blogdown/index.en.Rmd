@@ -9,7 +9,7 @@ tags:
   - R Blogdown
 authors: [Mengran-Li]
 description: ''
-summary: 'Establish a personal website in R'
+summary: 'This website is established by R Blogdown. So the first article here is to introduce how to build it by R Blogdown.'
 featuredImage: ''
 lastmod: '2020-12-14T09:17:33+08:00'
 series: []
