@@ -8,6 +8,7 @@ categories:
 tags: []
 authors: [Mengran-Li]
 description: ''
+summary: 'Draw maps in R via ggplot2 or leaflet.'
 featuredImage: ''
 lastmod: '2021-04-01T19:20:23+01:00'
 series: []
@@ -19,7 +20,7 @@ There are many packages to draw maps in R. Personally, I prefer to use *leaflet*
 
 The map border can be drawn by *borders()*. Let's look at an example of USA map:
 
-```{r}
+```{r,warning=FALSE}
 library(ggplot2)
 library(maps)
 ggplot() +
@@ -69,12 +70,16 @@ It is super suitable for a quick look at data map.
 
 Leaflet is a very popular tool based on java. It provides R package so that we can also use it.
 
-```{r}
+
+```{r, echo=FALSE}
+load("F:/Mengran/content/posts/2021-04-01-drawing-maps-in-r/bound.Rdata")
+```
+
+```{r, warning=FALSE, message=FALSE}
 library(leaflet)
 library(widgetframe)
 ## Loading required package: htmlwidgets
 
-load("F:/Mengran/content/posts/2021-04-01-drawing-maps-in-r/bound.Rdata")
 GetURL <- function(service, host = "basemap.nationalmap.gov") {
   sprintf("https://%s/arcgis/services/%s/MapServer/WmsServer", host, service)
 }

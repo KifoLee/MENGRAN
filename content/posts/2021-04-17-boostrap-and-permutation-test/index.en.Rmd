@@ -1,0 +1,28 @@
+---
+title: Bootstrap and Permutation Test
+author: Mengran-Li
+date: '2021-04-17'
+slug: []
+categories:
+  - R
+  - Statistics
+tags: []
+authors: [Mengran-Li]
+description: 'R code for bootstrap and permutation test'
+summary: 'R code for bootstrap and permutation test.'
+featuredImage: ''
+lastmod: '2021-04-17T00:05:19+01:00'
+series: []
+toc: yes
+---
+
+I will be busy these days, but I have planned to write down a blog post about bootstrap. So I have to talk about it in short. The parts I haven't finished, will be completed in the future (even I don't know how far the future means lol).
+
+## Bootstrap
+
+### Univariate
+
+```{r}
+
+```
+
