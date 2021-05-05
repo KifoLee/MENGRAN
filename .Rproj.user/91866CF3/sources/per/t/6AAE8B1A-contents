@@ -21,7 +21,7 @@ social:
 
 I will share some knowledge and technology here. But I will often leave articles unfinished (and won't complete, perhaps). Also, I will regard it as a notebook. 
 
-My CV is available in [PDF](Resume.pdf) form.
+My CV is [available](/resume/) in [PDF](Resume.pdf) form.
 
 
 
