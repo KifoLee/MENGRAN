@@ -15,14 +15,12 @@ series: []
 
 In practise, we always find the function in a published R package can not meet our needs very well. However, it's not necessary to write a new function all over. It would be more convenient if we can modify the function directly. Let's look at an example.
 
-We check the source code of <code><b>sd()</b></code> function in the <code><b>stats</b></code> package.
+We check the source code of <code><b>sd()</b></code> function in the <code><b>stats</b></code> package. The source code is as following:
 
 ```{r , comment=""}
 library(stats)
 sd
 ```
-
-The source code is as following:
 
 ```{r, eval = FALSE}
 trace("sd",edit=TRUE)
@@ -32,5 +30,5 @@ You can edit this function directly in this window displays automatically as you
 
 ![](trace.png)
 
-You don't change the code in the published package but you can use the modified code locally until you reload the package.
+You won't change the code in the published package but you can use the modified code locally until you reload the package.
 
