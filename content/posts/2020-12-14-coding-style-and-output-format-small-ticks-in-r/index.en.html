@@ -13,14 +13,15 @@ featuredImage: ''
 lastmod: '2020-12-14T19:42:22+08:00'
 series: []
 tas: yes
+
+bibliography: [cite.bib]
 ---
 
 <script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
 
 
 <p>Some one write their code causually which leads to the difficulties to read. And it may be inevitable to be lazy in programming and not paying attention to code specifications. That will cause some inconvenience to no matter others read our code or ourselves check our own work.</p>
-<p>There are some coding style guide such as Google’s <a href="https://google.github.io/styleguide/Rguide.html">R style guide</a> or <a href="http://adv-r.had.co.nz/Style.html">Style guide</a> in <span class="math inline">\(Advanced\)</span> <span class="math inline">\(R\)</span> by Hadley Wickham.
-In simple terms, R style guide includes Naming and Syntax. You can read the two documents by the links here. But what I focus on is how to obey the rules when I’m annoyed by programming progamming. These two packages may help.</p>
+<p>There are some coding style guide such as Google’s <a href="https://google.github.io/styleguide/Rguide.html">R style guide</a> or <a href="http://adv-r.had.co.nz/Style.html">Style guide</a> in <span class="math inline">\(Advanced\)</span> <span class="math inline">\(R\)</span> by Hadley Wickham. In simple terms, R style guide includes Naming and Syntax. You can read the two documents by the links here. But what I focus on is how to obey the rules when I’m annoyed by programming progamming. These two packages may help.</p>
 <div id="styler" class="section level2">
 <h2>styler</h2>
 <p>This package follows the tidyverse rules and can be installed by:</p>
@@ -32,14 +33,12 @@ remotes::install_github(&quot;r-lib/styler&quot;)</code></pre>
 </div>
 <div id="formatr" class="section level2">
 <h2>formatR</h2>
-<p>The other useful package is <span class="math inline">\(formatR\)</span> by Yihui. It has an offical document <a href="https://yihui.org/formatr/">formatR
-Format R code automatically</a>. You can get detailed information throught the link. Here we just simply introduce the function to format R code.</p>
+<p>The other useful package is <span class="math inline">\(formatR\)</span> by Yihui. It has an offical document <a href="https://yihui.org/formatr/">formatR Format R code automatically</a>. You can get detailed information throught the link. Here we just simply introduce the function to format R code.</p>
 <pre class="r"><code>library(formatR)
 tidy_source(&quot;X.R&quot;)</code></pre>
 <p>Input the R file you want to format, and run the tidy_source function.</p>
 <p>There also are some function such as tidy_shiny for shiny, tidy_dir for all files under working directory. But the another function I want to perform is tidy_eval, which can be used to organize the output.</p>
-<p>Here is the example to explain the use.
-If you don’t use the function:</p>
+<p>Here is the example to explain the use. If you don’t use the function:</p>
 <pre class="r"><code>set.seed(123)
 text = c(&quot;a&lt;-1+1;a  # print the value&quot;, &quot;matrix(rnorm(10),5)&quot;)
 text</code></pre>

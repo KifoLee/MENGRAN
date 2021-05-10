@@ -1,0 +1,32 @@
+---
+title: How to modify a function in a R package
+author: Mengran Li
+date: '2021-05-10'
+slug: []
+categories:
+  - R
+tags: []
+authors: [Mengran Li]
+description: ''
+featuredImage: ''
+lastmod: '2021-05-10T20:06:08+01:00'
+series: []
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+
+<p>In practise, we always find the function in a published R package can not meet our needs very well. However, it’s not necessary to write a new function all over. It would be more convenient if we can modify the function directly. Let’s look at an example.</p>
+<p>We check the source code of <code><b>sd()</b></code> function in the <code><b>stats</b></code> package.</p>
+<pre class="r"><code>library(stats)
+sd</code></pre>
+<pre><code>function (x, na.rm = FALSE) 
+sqrt(var(if (is.vector(x) || is.factor(x)) x else as.double(x), 
+    na.rm = na.rm))
+&lt;bytecode: 0x00000000158558a8&gt;
+&lt;environment: namespace:stats&gt;</code></pre>
+<p>The source code is as following:</p>
+<pre class="r"><code>trace(&quot;sd&quot;,edit=TRUE)</code></pre>
+<p>You can edit this function directly in this window displays automatically as you like and save it.</p>
+<p><img src="trace.png" /></p>
+<p>You don’t change the code in the published package but you can use the modified code locally until you reload the package.</p>
