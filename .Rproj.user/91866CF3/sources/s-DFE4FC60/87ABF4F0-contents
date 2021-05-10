@@ -13,7 +13,7 @@ lastmod: '2021-05-10T20:06:08+01:00'
 series: []
 ---
 
-In practise, we always find the function in a published R package can not meet our needs very well. However, it's not necessary to write a new function all over. It would be more convenient if we can modify the function directly. Let's look at an example.
+In practice, we always find the function in a published R package can not meet our needs very well. However, it's not necessary to write a new function all over. It would be more convenient if we can modify the function directly. Let's look at an example.
 
 We check the source code of <code>sd()</code> function in the <code>stats</code> package. The source code is as following:
 
