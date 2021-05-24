@@ -28,11 +28,27 @@ Contact Info {#contact}
 Skills {#skills}
 --------------------------------------------------------------------------------
 
-- Experienced in data processing, statistical analysis, statistical models, data visualization and interactive report.
+Experienced in:
 
-- Highly skilled in R
+1. data processing
 
-- Skilled in Python, Matlab and SPSS
+2. statistical modelling
+
+3. data visualization 
+
+4. interactive report
+
+Highly skilled in:
+
+1. R
+
+Skilled in:
+
+ 1. Python
+ 
+ 2. Matlab
+ 
+ 3. LaTex
 
 
 Disclaimer {#disclaimer}
@@ -62,9 +78,7 @@ MSc in Statistics
 
 Glasgow, Scotland, UK
 
-2021 - 2022
-
-Thesis: 
+2020 - 2021
 
 ### Southwestern University of Finance and Economics
 
@@ -95,7 +109,7 @@ Assistant
 
 Glasgow, Scotland, UK
 
-Jan 2021 - 
+2021
 
 ### National Social Science Fund Project  
 
