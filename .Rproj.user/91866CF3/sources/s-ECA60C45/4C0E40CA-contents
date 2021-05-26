@@ -19,7 +19,7 @@ Aside
 Contact Info {#contact}
 --------------------------------------------------------------------------------
 
-- <i class="fa fa-envelope"></i> 2592713L@outlook.com
+- <i class="fa fa-envelope"></i> 2592713L@gla.student.ac.uk
 - <i class="fa fa-github"></i> [github.com/MengranLi-git](https://github.com/MengranLi-git)
 - <i class="fa fa-phone"></i> +44 757-991-0542
 - For more information, please contact me via email.
@@ -28,28 +28,23 @@ Contact Info {#contact}
 Skills {#skills}
 --------------------------------------------------------------------------------
 
-Experienced in:
+- Computational statistics
 
-1. data processing
+- Extreme value theory
 
-2. statistical modelling
+- Data wrangling
 
-3. data visualization 
+- Data visualization 
 
-4. interactive report
+- Interactive report
 
-Highly skilled in:
+- Expert in R and R Studio
 
-1. R
+- Github
 
-Skilled in:
+- LaTex
 
- 1. Python
- 
- 2. Matlab
- 
- 3. LaTex
-
+- Some Python and Matlab
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
@@ -78,7 +73,7 @@ MSc in Statistics
 
 Glasgow, Scotland, UK
 
-2020 - 2021
+Jan 2021 - Jan 2022
 
 ### Southwestern University of Finance and Economics
 
@@ -86,7 +81,9 @@ BSc in Statistics (Science)
 
 Chengdu, China
 
-2015 - 2019
+Sep 2015 - Jul 2019
+
+GPA: 3.2/5.0 Major GPA: 3.5/5.0
 
 Thesis: Analysis of public opinion heat and emotion based on Hidden Markov model
 
@@ -96,7 +93,7 @@ BSc in Finance (Double degree)
 
 Chengdu, China
 
-2017 - 2019
+Sep 2017 - Jul 2019
 
 Thesis: Performance evaluation of fund managers
 
@@ -111,6 +108,14 @@ Glasgow, Scotland, UK
 
 2021
 
+-  Exploratory data analysis (EDA):
+
+Summary statistics, kernel smoothing, expected shortfall were applied to extract meaningful information from the data, detect patterns, etc. Hydorlogic maps were drawn by a R package leaflet and the feature of streamflow data was presented through R packages animate. R packages data.table and tidyverse were used to data processing.
+
+-  Non-stationary GEV models
+
+The nsGEV model was applied to identify the trends of hydrological extremes and estimate the resolution of return levels in the U.S.A. The Uncertainty assessment was determined via bootstrapping. They were realised through R programming.
+
 ### National Social Science Fund Project  
 
 Data Analysis
@@ -119,7 +124,7 @@ Chengdu, China
 
 Jul 2017 - Nov 2018
 
-- Participating in the national social science foundation project "research on tort relief of malicious claims".
+- Participating in the national social science foundation project "research on tort relief of malicious claims". 
 - Being responsible for building model and data analysis.
 
 ### American Mathematical Modelling Contest 
