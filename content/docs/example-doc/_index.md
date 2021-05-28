@@ -36,6 +36,10 @@ draft = false
 
 [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 
+[icon](https://fontawesome.com/start)
+
+[icons](https://github.com/mitchelloharawild/icons)
+
 ### Visualization
 
 [plotly](https://plotly.com/r/)
