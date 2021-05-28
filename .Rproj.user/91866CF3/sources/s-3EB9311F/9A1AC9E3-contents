@@ -1,0 +1,28 @@
+---
+title: Extreme Value Theory
+author: Mengran Li
+date: '2021-01-30'
+slug: []
+categories:
+  - Statistics
+tags: []
+authors: [Mengran Li]
+description: ''
+summary: 'Basic concepts of EVT'
+featuredImage: ''
+lastmod: '2021-01-30T09:08:24Z'
+series: []
+---
+
+## Asymptotic Model
+
+### Formula
+
+$$M_n=max\{X_1,\dots,X_n\}$$
+
+where $X_1,\dots,X_n$, is a sequence of independent random variables having a common distribution function $F$.
+
+
+Since $F$ is unknown, so we can look for approximate families of models for $F^n$.
+
+

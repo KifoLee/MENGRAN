@@ -53,6 +53,12 @@ This resume was made with the R package [**pagedown**](https://github.com/rstudi
 
 Last updated on `r Sys.Date()`.
 
+Languages {#languages}
+--------------------------------------------------------------------------------
+
+Chinese: Native
+
+English: Duolingo 115
 
 
 Main
@@ -160,4 +166,24 @@ Oct 2016 - Mar 2017
 - Assisting the professor in revising the real function theory textbook.
 - This work built my sound theoretical foundation in real functions.
 
+AWARDS & HONOURS {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Excellent League Member (2015-2016)
+
+N/A
+
+N/A
+
+N/A
+
+### Third-class Academic Scholarship (2016 - 2017)
+
+N/A
+
+N/A
+
+N/A
+
+### Second-class Academic Scholarship (2017 - 2018)
 

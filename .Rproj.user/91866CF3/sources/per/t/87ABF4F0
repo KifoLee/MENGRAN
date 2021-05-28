@@ -1,0 +1,30 @@
+{
+    "id": "87ABF4F0",
+    "path": "F:/Mengran/content/posts/2021-05-10-how-to-modify-a-function-in-a-r-package/index.en.Rmd",
+    "project_path": "content/posts/2021-05-10-how-to-modify-a-function-in-a-r-package/index.en.Rmd",
+    "type": "r_markdown",
+    "hash": "1569159214",
+    "contents": "",
+    "dirty": false,
+    "created": 1620673569880.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "25,0",
+        "scrollLine": "0",
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1",
+        "rmdVisualModeLocation": "513:327.272705078125"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1620676369,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1620676369065,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,189 @@
+---
+title: "Mengran Li's resume"
+author: Mengran Li
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: false
+# uncomment this line to produce HTML and PDF in RStudio:
+knit: pagedown::chrome_print
+---
+
+Aside
+================================================================================
+
+
+
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> 2592713L@gla.student.ac.uk
+- <i class="fa fa-github"></i> [github.com/MengranLi-git](https://github.com/MengranLi-git)
+- <i class="fa fa-phone"></i> +44 757-991-0542
+- For more information, please contact me via email.
+
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+- Computational statistics
+
+- Extreme value theory
+
+- Data wrangling
+
+- Data visualization 
+
+- Interactive report
+
+- Expert in R and R Studio
+
+- Github
+
+- LaTex
+
+- Some Python and Matlab
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+
+Last updated on `r Sys.Date()`.
+
+Languages {#languages}
+--------------------------------------------------------------------------------
+
+Chinese: Native
+
+English: Duolingo 115
+
+
+Main
+================================================================================
+
+Mengran Li {#title}
+--------------------------------------------------------------------------------
+
+### Currently searching for a PhD position in statistics
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### University of Glasgow
+
+MSc in Statistics
+
+Glasgow, Scotland, UK
+
+Jan 2021 - Jan 2022
+
+### Southwestern University of Finance and Economics
+
+BSc in Statistics (Science)
+
+Chengdu, China
+
+Sep 2015 - Jul 2019
+
+GPA: 3.2/5.0 Major GPA: 3.5/5.0
+
+Thesis: Analysis of public opinion heat and emotion based on Hidden Markov model
+
+### Southwestern University of Finance and Economics
+
+BSc in Finance (Double degree)
+
+Chengdu, China
+
+Sep 2017 - Jul 2019
+
+Thesis: Performance evaluation of fund managers
+
+Project Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+### Research on Extreme Values of Streamflow in the U.S.A
+
+Assistant
+
+Glasgow, Scotland, UK
+
+2021
+
+-  Exploratory data analysis (EDA):
+
+Summary statistics, kernel smoothing, expected shortfall were applied to extract meaningful information from the data, detect patterns, etc. Hydorlogic maps were drawn by a R package leaflet and the feature of streamflow data was presented through R packages animate. R packages data.table and tidyverse were used to data processing.
+
+-  Non-stationary GEV models
+
+The nsGEV model was applied to identify the trends of hydrological extremes and estimate the resolution of return levels in the U.S.A. The Uncertainty assessment was determined via bootstrapping. They were realised through R programming.
+
+### National Social Science Fund Project  
+
+Data Analysis
+
+Chengdu, China
+
+Jul 2017 - Nov 2018
+
+- Participating in the national social science foundation project "research on tort relief of malicious claims". 
+- Being responsible for building model and data analysis.
+
+### American Mathematical Modelling Contest 
+
+Modeller
+
+N/A
+
+Jan 2018 
+
+- Building mathematical models
+- Assisted in programming, part of the chart drawing, paper writing.
+- Won the second prize.
+
+### Statistical Modeling Contest
+
+Team Leader 
+
+N/A
+
+Oct 2017 - Dec 2017
+
+- Predicting the default behavior of telecom users.
+
+### Real Function Theory Textbook Revision
+
+Assistant
+
+Chengdu, China
+
+Oct 2016 - Mar 2017
+
+- Assisting the professor in revising the real function theory textbook.
+- This work built my sound theoretical foundation in real functions.
+
+AWARDS & HONOURS {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Excellent League Member (2015-2016)
+
+N/A
+
+N/A
+
+N/A
+
+### Third-class Academic Scholarship (2016 - 2017)
+
+N/A
+
+N/A
+
+N/A
+
+### Second-class Academic Scholarship (2017 - 2018)
+
