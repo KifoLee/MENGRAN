@@ -21,7 +21,3 @@ Just some toys for fun.
 ## Shiny
 
 [Model Fit](https://mengranli.shinyapps.io/model_fit/)
-
-## CV
-
-[My CV](https://github.com/MengranLi-git/CV)

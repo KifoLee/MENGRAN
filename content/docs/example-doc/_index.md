@@ -14,7 +14,7 @@ draft = false
 
 ## R
 
-### R markdown & HTML
+### R markdown
 
 [Rmarkdown](https://bookdown.org/yihui/rmarkdown-cookbook/)
 
@@ -36,17 +36,11 @@ draft = false
 
 [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 
-[icon](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
-
-[icons](https://github.com/mitchelloharawild/icons)
-
 ### Visualization
 
 [plotly](https://plotly.com/r/)
 
 [leaflet for R](http://rstudio.github.io/leaflet/)
-
-[Mapbox](https://www.mapbox.com/)
 
 [From data to viz](https://www.data-to-viz.com/)
 
@@ -55,8 +49,6 @@ draft = false
 [Shiny](https://shiny.rstudio.com/gallery/)
 
 [gganimate](https://gganimate.com/)
-
-[htmlwidgets](https://www.htmlwidgets.org/)
 
 ### Data process
 
