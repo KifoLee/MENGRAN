@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
     # set it to true for a self-contained HTML page but it'll take longer to render
-    self_contained: false
+    self_contained: true
 # uncomment this line to produce HTML and PDF in RStudio:
 knit: pagedown::chrome_print
 ---
@@ -19,7 +19,7 @@ Aside
 Contact Info {#contact}
 --------------------------------------------------------------------------------
 
-- <i class="fa fa-envelope"></i> 2592713L@gla.student.ac.uk
+- <i class="fa fa-envelope"></i> 2592713L@student.gla.ac.uk
 - <i class="fa fa-github"></i> [github.com/MengranLi-git](https://github.com/MengranLi-git)
 - <i class="fa fa-phone"></i> +44 757-991-0542
 - For more information, please contact me via email.
@@ -72,7 +72,7 @@ MSc in Statistics
 
 Glasgow, Scotland, UK
 
-Jan 2021 - Jan 2022
+2021 - 2022
 
 ### Southwestern University of Finance and Economics
 
@@ -80,7 +80,7 @@ BSc in Statistics (Science)
 
 Chengdu, China
 
-Sep 2015 - Jul 2019
+2015 - 2019
 
 Thesis: Analysis of public opinion heat and emotion based on Hidden Markov model
 
@@ -90,7 +90,7 @@ BSc in Finance (Double degree)
 
 Chengdu, China
 
-Sep 2017 - Jul 2019
+2017 - 2019
 
 Thesis: Performance evaluation of fund managers
 
@@ -114,7 +114,7 @@ Data Analysis
 
 Chengdu, China
 
-Jul 2017 - Nov 2018
+2017 - 2018
 
 - Participating in the national social science foundation project "research on tort relief of malicious claims". 
 - Being responsible for building model and data analysis.
@@ -125,7 +125,7 @@ Modeller
 
 N/A
 
-Jan 2018 
+2018 
 
 - Building mathematical models
 - Assisted in programming, part of the chart drawing, paper writing.
@@ -137,7 +137,7 @@ Team Leader
 
 N/A
 
-Oct 2017 - Dec 2017
+2017
 
 - Predicting the default behavior of telecom users.
 
@@ -147,7 +147,7 @@ Assistant
 
 Chengdu, China
 
-Oct 2016 - Mar 2017
+2016 - 2017
 
 - Assisting the professor in revising the real function theory textbook.
 - This work built my sound theoretical foundation in real functions.

@@ -2,12 +2,8 @@
     "sortOrder": [
         {
             "columnIndex": 2,
-            "ascending": false
+            "ascending": true
         }
     ],
-<<<<<<< HEAD
     "path": "F:/Mengran/static/resume"
-=======
-    "path": "F:/Mengran/config/_default"
->>>>>>> parent of c0a5478 (CV)
 }
