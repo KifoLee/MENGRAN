@@ -1,5 +1,5 @@
 mainSections = ["posts"]
-description = "Personal website of Mengran Li."
+description = "Eureka is a elegant and powerful theme for Hugo."
 
 repoURL = ""
 # If it is a Github repo, leave blank
@@ -15,11 +15,11 @@ colorScheme = ""
 # E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
 siteType = "Person"
 icon = "images/icon.png"
-publisherName = "Mengran Li"
+publisherName = "C. Wang"
 publisherLogo = ""
 
 [hero]
-  slogan = "On my shoulder is the wind, the wind is the twinkling stars."
+  slogan = "We are all in the gutter, but some of us are looking at the stars."
   # Specify the image name in `assets/images/` folder.
   imgLeft = "images/hero-left.jpg"
   imgRight = "images/hero-right.jpg"
@@ -35,10 +35,10 @@ publisherLogo = ""
 
 [comment]
   # Options: disqus and commento.
-  platform = "disqus"
+  platform = ""
 
   [comment.disqus]
-    shortname = "mengran-li"
+    shortname = ""
 
   [comment.commento]
     # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty. 

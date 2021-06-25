@@ -1,0 +1,14 @@
+[[main]]
+  name = "About"
+  url = "/authors/Mengran-Li/"
+  weight = 1
+
+[[main]]
+  name = "Statistics and R"
+  url = "/posts/"
+  weight = 2
+
+[[main]]
+  name = "Notes"
+  url = "/docs/"
+  weight = 3
