@@ -1,0 +1,45 @@
+mainSections = ["posts"]
+description = "Personal website of Mengran Li."
+
+repoURL = ""
+# If it is a Github repo, leave blank
+repoEditURL = ""
+
+dateFormat = ""
+
+titleSeparator = ""
+
+# Options: auto, light and dark. Default is auto.
+colorScheme = ""
+
+# E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
+siteType = "Person"
+icon = "images/icon.png"
+publisherName = "Mengran Li"
+publisherLogo = ""
+
+[hero]
+  slogan = "On my shoulder is the wind, the wind is the twinkling stars."
+  # Specify the image name in `assets/images/` folder.
+  imgLeft = "images/hero-left.jpg"
+  imgRight = "images/hero-right.jpg"
+
+[math]
+  handler = "katex"
+
+  # [math.katex]
+  #   # Browse https://katex.org/docs/options.html to see the options available.
+  #   # KaTeX's Auto-render ignores `displayMode` property of the options, so this property will not work.
+  #   # You can list the key and value you want as below.
+  #   leqno = ""
+
+[comment]
+  # Options: disqus and commento.
+  platform = "" #disqus
+
+  [comment.disqus]
+    shortname = "" #mengran-li
+
+  [comment.commento]
+    # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty. 
+    url = ""

@@ -1,7 +1,0 @@
-datadrivencv::use_datadriven_cv(
-  full_name = "Mengran Li",
-  data_location = "https://github.com/MengranLi-git/Mengran/tree/main/static/resume/cv.csv",
-  pdf_location = "https://github.com/MengranLi-git/Mengran/tree/main/static/resume/cv.pdf",
-  html_location = "https://github.com/MengranLi-git/Mengran/tree/main/static/resume/",
-  source_location = "https://github.com/MengranLi-git/Mengran/tree/main/static/resume"
-)
