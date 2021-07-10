@@ -1,0 +1,60 @@
+---
+title: Create your resume or CV in R
+author: 'Mengran Li'
+date: '2021-07-10'
+slug: []
+categories: []
+tags: []
+authors: [Mengran Li]
+description: ''
+featuredImage: ''
+lastmod: '2021-07-10T12:18:54+01:00'
+series: []
+toc: yes
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+
+</div>
+
+<p>Many fantastic things can be done in R. A beautiful resume or CV can leave a good impression of you to others. People usually make their resume or CV in word. HTML is also an extraordinary typesetting tool, which is one of the motivations Yihui created a series packages about html. Don’t worry if you don’t know much about HTML or CSS. You are able to write a beautiful resume or CV in R easily.</p>
+<div id="resume-in-pagedown" class="section level2">
+<h2>Resume in pagedown</h2>
+<ul>
+<li>The first thing you need to do is install the <code>pagedown</code> package.</li>
+</ul>
+<pre class="r"><code>remotes::install_github(&#39;rstudio/pagedown&#39;)</code></pre>
+<ul>
+<li>Create a rmarkdown file</li>
+</ul>
+<p><img src="resume.jpg" /></p>
+<ul>
+<li>Fill in the content as you like.</li>
+</ul>
+<p>A simple resume is completed by this way. Isn’t it?</p>
+<div id="costume-your-resume" class="section level3">
+<h3>Costume your resume</h3>
+<p>You may want to modify the icon, color, font or any other details. For the icon, for example, you’ like another icon to replace the suitcase icon <i class="fa fa-suitcase"></i> .
+The original code is <code>{data-icon=suitcase}</code>. All you need to do is to search a new icon in <a href="https://fontawesome.com/v5.15/icons?d=gallery&amp;p=2">fontawesome</a> and paste its name like <code>{data-icon=user-circle}</code>. Then it displays as <i class="fa fa-user-circle"></i>.</p>
+<p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></link></p>
+<p>If you want to change the font size, color etc, you may know a little css.</p>
+<p>The book <a href="https://pagedown.rbind.io/#the-css-overriding-mechanism">pagedown: Create Paged HTML Documents for Printing from R Markdown</a> has a simple explain on css in Chapter 2.2. You need to change your css file.</p>
+<p>Simply, first, add or change css file in the yaml. Second, define your class. Third, use the new class in your document.</p>
+</div>
+<div id="pdf-version" class="section level3">
+<h3>Pdf version</h3>
+<p>We need a pdf version in many occasion. So you should delete the # in front of <code>#knit: pagedown::chrome_print</code>. Then you will knit a pdf file.</p>
+<p>Sometimes it fails because R can not find the chrome. If so, run this line in your R console.</p>
+<pre class="r"><code>Sys.setenv(PAGEDOWN_CHROME  = &quot;url&quot;)</code></pre>
+<p><code>url</code> is the position of your chrome.exe.</p>
+<p>My <a href="https://mengranli.netlify.app/resume/">resume</a> can be found here.</p>
+</div>
+</div>
+<div id="cv" class="section level2">
+<h2>CV</h2>
+<p>Another idea is to generate the content via table, which can have a tidy output through <code>kable</code>.</p>
+<p>I created a <a href="https://github.com/MengranLi-git/CV">project</a> to write personal CV, especially the template is for phd application. But you can download and costume it as your own purpose.</p>
+<p>You can manage your own data and update the CV easily. And the css document is more clear so that you can change it more continently.</p>
+</div>
