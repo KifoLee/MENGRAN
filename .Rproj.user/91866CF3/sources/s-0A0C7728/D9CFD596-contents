@@ -7,7 +7,7 @@ categories:
   - Statistics
   - R
 tags: []
-authors: []
+authors: [Mengran Li]
 description: ''
 featuredImage: ''
 lastmod: '2022-01-07T20:12:31Z'
@@ -21,11 +21,15 @@ There is a package `Parallel`
 
 `cl <- makeCluster(np)`: initialize a cluster mc with np processes.
 
+
+
 Apply Operations using Clusters:
 
 `clusterCall`, `clusterEvalQ`, `clusterApply`, `clusterExport`, `clusterMap`, 
 
 `parLapply`, `parSapply`, `parApply`, `parRapply`, `parCapply`
+
+
 
 `stopCluster(cl)`: release the occupied cores.
 
@@ -46,7 +50,11 @@ sim <- function(x){
   }
 ```
 
+
+
 Use `parallel` to speed up the calculation.
+
+
 
 ```{r}
 SimParallel <- function(x, nc){
