@@ -1,0 +1,49 @@
+---
+title: Parallel computing in R
+author: Mengran Li
+date: '2022-01-07'
+slug: []
+categories:
+  - Statistics
+  - R
+tags: []
+authors: []
+description: ''
+featuredImage: ''
+lastmod: '2022-01-07T20:12:31Z'
+series: []
+toc: no
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+
+</div>
+
+<p>There is a package <code>Parallel</code></p>
+<p><code>detectCores()</code>: return how many cores exist on your PC.</p>
+<p><code>cl &lt;- makeCluster(np)</code>: initialize a cluster mc with np processes.</p>
+<p>Apply Operations using Clusters:</p>
+<p><code>clusterCall</code>, <code>clusterEvalQ</code>, <code>clusterApply</code>, <code>clusterExport</code>, <code>clusterMap</code>,</p>
+<p><code>parLapply</code>, <code>parSapply</code>, <code>parApply</code>, <code>parRapply</code>, <code>parCapply</code></p>
+<p><code>stopCluster(cl)</code>: release the occupied cores.</p>
+<div id="an-example" class="section level2">
+<h2>An example</h2>
+<p>Check how many cores exist on my PC.</p>
+<pre class="r"><code>library(parallel)
+detectCores()</code></pre>
+<pre><code>## [1] 12</code></pre>
+<p>Define a function.</p>
+<pre class="r"><code>sim &lt;- function(x){
+    rnorm(1, mean = x)
+  }</code></pre>
+<p>Use <code>parallel</code> to speed up the calculation.</p>
+<pre class="r"><code>SimParallel &lt;- function(x, nc){
+  cl &lt;- makeCluster(nc)
+  result = parSapply(cl = cl, x, sim)
+  stopCluster(cl)
+  return(result)
+}
+out &lt;- SimParallel(1:10000, 8)</code></pre>
+</div>
