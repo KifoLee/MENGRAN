@@ -1,21 +1,23 @@
 ---
 title: Parallel computing in R
 author: Mengran Li
-date: '2022-01-07'
+date: '2022-01-08'
 slug: []
 categories:
-  - Statistics
   - R
+  - Statistics
 tags: []
 authors: [Mengran Li]
 description: ''
+draft: no
 featuredImage: ''
-lastmod: '2022-01-07T20:12:31Z'
+lastmod: '2022-01-08T17:45:37Z'
 series: []
 toc: no
 ---
 
-There is a package `Parallel`
+  
+  There is a package `Parallel`
 
 `detectCores()`: return how many cores exist on your PC.
 
@@ -24,8 +26,8 @@ There is a package `Parallel`
 
 
 Apply Operations using Clusters:
-
-`clusterCall`, `clusterEvalQ`, `clusterApply`, `clusterExport`, `clusterMap`, 
+  
+  `clusterCall`, `clusterEvalQ`, `clusterApply`, `clusterExport`, `clusterMap`, 
 
 `parLapply`, `parSapply`, `parApply`, `parRapply`, `parCapply`
 
@@ -46,8 +48,8 @@ Define a function.
 
 ```{r}
 sim <- function(x){
-    rnorm(1, mean = x)
-  }
+  rnorm(1, mean = x)
+}
 ```
 
 
