@@ -1,0 +1,48 @@
+---
+title: Develop your R package fast
+author: Mengran Li
+date: '2022-01-18'
+slug: []
+categories:
+  - R
+tags: []
+authors: [Mengran Li]
+description: ''
+featuredImage: ''
+lastmod: '2022-01-18T18:10:22Z'
+series: []
+toc: no
+---
+
+If you have written many functions, it would be more convenient to build up a package. It is also wonderful to share the tools you created by developing a R package. I will introduce some easy steps to achieve this goal.
+
+## Preparation
+
+We need to creat a project for the new package.
+
+### Creat a new project
+
+Click these butthons in your Rstudio.
+
+`File > New project > New Dictionary > R package`
+
+Then you need to edit the `DESCRIPTION` file.
+
+ \fbox{
+Package: Example
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+}
+
+
+
+
+

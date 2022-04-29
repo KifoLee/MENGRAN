@@ -1,0 +1,23 @@
+---
+title: Develop your R package fast
+author: ''
+date: '2022-01-18'
+slug: []
+categories:
+  - R
+tags: []
+authors: [Mengran Li]
+description: ''
+featuredImage: ''
+lastmod: '2022-01-18T16:27:22Z'
+series: []
+toc: yes
+---
+
+If you have written many functions, it would be more convenient to build up a package. It is also wonderful to share the tools you created by developing a R package. I will introduce some easy steps to achieve this goal.
+
+# Create a new project
+
+`File > New project > New Dictionary > R package`
+
+

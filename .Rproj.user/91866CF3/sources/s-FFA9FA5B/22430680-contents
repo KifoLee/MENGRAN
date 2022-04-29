@@ -80,6 +80,13 @@ draft = false
 
 [Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/index.html)
 
+[Numpy](https://numpy.org/)
+
+[Pandas](https://pandas.pydata.org/)
+
+[PyTorch](https://pytorch.org/)
+
+
 ## Blog
 
 [Yihui](https://yihui.org/)
