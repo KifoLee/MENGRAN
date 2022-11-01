@@ -1,5 +1,0 @@
-"0","library(mapproj)"
-"0","ggplot(us.cities, aes(x = long, y = lat)) +"
-"0","  geom_point(aes(color = pop))+"
-"0","  borders(""state"")+"
-"0","  coord_map()"
