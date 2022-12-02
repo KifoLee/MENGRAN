@@ -30,7 +30,9 @@ output:
     keep_tex:true
 ```
 
-Then all files will be generated, including a `.tex` file and a folder of all generates files. You can compress the project into one `.zip` file and upload to overleaf. Try to share it with others and update them!
+Then all files will be generated, including a `.tex` file and a folder of all generates files. 
+
+You can compress the project into one `.zip` file and upload to overleaf. Try to share it with others and update them!
 
 
 
