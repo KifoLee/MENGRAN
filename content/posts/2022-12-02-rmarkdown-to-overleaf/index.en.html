@@ -1,0 +1,31 @@
+---
+title: A one-step workflow from Rmarkdown to overleaf
+author: Mengran Li
+date: '2022-12-02'
+slug: []
+categories:
+  - R
+tags: []
+authors: []
+description: ''
+featuredImage: ''
+lastmod: '2022-12-02T21:25:05Z'
+series: []
+toc: yes
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+
+</div>
+
+<p>If you are a user of Rmarkdown, you can write conveniently via rmarkdown, that means, you can insert the code, generate beautiful tables and figures, and update the output just clicking knit. It sounds wonderful. However, you should be struggled with how to corporate with others because you can not share all the files every time. It is also difficult to rebuilt the same environment on other’s computer. It is almost a impossible way.</p>
+<p>Overleaf is a powerful website that you can work with a team to edit a document together. However, you may feel it troublesome when you need to generate tables, figures, etc. It is based on tex so you can not use it to run some codes.</p>
+<p>At this time, you will think, it would be wonderful if you can do the project in Rmarkdown and work with others in overleaf. Is it possible?</p>
+<p>Sure. The workflow from Rmarkdown to overleaf will help you to improve your efficiency.</p>
+<p>You just need to add</p>
+<pre><code>output:
+  pdf_document:
+    keep_tex:true</code></pre>
+<p>Then all files will be generated, including a <code>.tex</code> file and a folder of all generates files. You can compress the project into one <code>.zip</code> file and upload to overleaf. Try to share it with others and update them!</p>
